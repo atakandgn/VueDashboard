@@ -65,4 +65,4 @@ Welcome to Eva, your personalized analytics dashboard. This dashboard provides i
 If you have any questions or need further assistance, please feel free to reach out:
 
 - Email: atakandogan.info@gmail.com
-- LinkedIn: [Atakan Dogaan](https://www.linkedin.com/in/atakandoan/)
+- LinkedIn: [Atakan Doğan](https://www.linkedin.com/in/atakandoan/)
