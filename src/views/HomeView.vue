@@ -298,7 +298,7 @@ const fetchData = async (selectedDays) => {
       ];
 
       Highcharts.setOptions({
-        colors: ['#67e6c8', '#7467e6', '#6e46ae', '#E667A4', '#A4E667'],
+        colors: ['#67e6c8', '#7467e6', '#6e46ae'],
         chart: {
           style: {
             color: '#000000',
@@ -386,9 +386,9 @@ const fetchData = async (selectedDays) => {
         },
         series: seriesData,
       });
-      watch(clickedColumnDates, () => {
-        chart.xAxis[0].setCategories(clickedColumnDates.value);
-      });
+      // watch(clickedColumnDates, () => {
+      //   chart.xAxis[0].setCategories(clickedColumnDates.value);
+      // });
     }
   } catch (error) {
     console.error('Error fetching data:', error.response?.data);
@@ -436,7 +436,7 @@ const fetchTableData = async () => {
             sellerId: userInfo.value.store[0].storeId,
             pageNumber: 1,
             pageSize: 30,
-            isDaysCompare: 0,
+            isDaysCompare: 1,
           },
           {
             headers: {
@@ -546,13 +546,6 @@ onMounted(async () => {
   // Call fetchSkuRefundRateData when clickedColumnDates change
   watchEffect(() => {
     if (clickedColumnDates.value.length > 0) {
-      fetchSkuRefundRateData();
-    }
-  });
-
-  // Watch for changes in clickedColumnDates and fetch SKU Refund Rate data accordingly
-  watchEffect(() => {
-    if (clickedColumnDates.value.length > 0) {
       // Fetch SKU Refund Rate data for all SKUs
       fetchSkuRefundRateData();
     }
@@ -566,3 +559,5 @@ onMounted(async () => {
   watch(clickedColumnDates, fetchTableData);
 });
 </script>
+
+

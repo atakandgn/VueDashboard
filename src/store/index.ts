@@ -4,10 +4,10 @@ const store = createStore({
     state: {
         authToken: null,
         email: null,
+        currency: null,
         userInfo: null,
         dailySalesOverview: null,
         loginFailed: false,
-        currency: null,
     },
     mutations: {
         setToken(state, {accessToken, email}) {
@@ -19,6 +19,7 @@ const store = createStore({
         clearToken(state) {
             state.authToken = null;
             state.email = null;
+            state.currency = null;
             localStorage.removeItem('authToken');
             localStorage.removeItem('email');
             localStorage.removeItem('currency');

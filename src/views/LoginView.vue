@@ -104,7 +104,6 @@ export default {
           setTimeout(() => {
             this.$store.commit('setLoginFailed', false);
           }, 5000);
-          return;
         } else {
           console.log('Login successful:', response.data);
           const {AccessToken} = response.data.Data;
