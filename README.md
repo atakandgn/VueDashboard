@@ -1,8 +1,8 @@
-# Eva Guru Dashboard
+# Vue Dashboard
 
 ## Overview
 
-Welcome to Eva, your personalized analytics dashboard. This dashboard provides insights into daily sales, SKU refund rates, and other valuable information for your marketplace store.
+Welcome to your personalized analytics dashboard. This dashboard provides insights into daily sales, SKU refund rates, and other valuable information for your marketplace store.
 
 ## Features
 
